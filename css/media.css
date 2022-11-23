@@ -255,7 +255,7 @@
     width: 50%;
   }
   #hero {
-    background: url("../img/IMAGE (28).png");
+    background: url("/img/IMAGE (28).png");
   }
   #hero .hero--text {
     width: 90%;

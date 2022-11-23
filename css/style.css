@@ -90,7 +90,7 @@ label:active {
 }
 
 #hero {
-  background: url("../img/413b25df-09d7-4d57-8f38-d686c7fc12da (1).png") no-repeat;
+  background: url("/img/413b25df-09d7-4d57-8f38-d686c7fc12da (1).png") no-repeat;
   background-size: 100%;
 }
 #hero #youtube:checked ~ .video {
