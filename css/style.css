@@ -1,0 +1,677 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0D0D0E;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+a:hover {
+  border-bottom: 2px solid #FFFFFF;
+  transition: 0.5s all;
+  letter-spacing: 5px;
+}
+
+label {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  cursor: pointer;
+}
+
+label:hover {
+  box-shadow: 0 0 2px 2px;
+  transition: 0.5s all;
+}
+
+label:active {
+  color: darkblue;
+  transition: 0.5s all;
+}
+
+#header {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  z-index: 8;
+}
+#header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header--menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+#header .header--menu__img {
+  width: 15%;
+}
+#header .header--btn {
+  padding: 1% 2%;
+  background: #D400B3;
+  border: 2px solid #D400B3;
+  border-radius: 1px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100%;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#header .header--btn:hover {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 109) 65%, rgb(255, 0, 121) 92%);
+  box-shadow: 5px 5px 0 0 gray;
+  transition: 0.5s all;
+}
+
+#hero {
+  background: url("../img/413b25df-09d7-4d57-8f38-d686c7fc12da (1).png") no-repeat;
+  background-size: 100%;
+}
+#hero #youtube:checked ~ .video {
+  display: block;
+  transition: 10s all;
+}
+#hero input {
+  display: none;
+}
+#hero .youtube {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  background: #262627;
+  padding: 3% 14%;
+  border: 10px solid transparent;
+  border-bottom: 10px solid gray;
+  border-left: 10px solid gray;
+  cursor: pointer;
+}
+#hero .youtube:hover {
+  background: rgba(0, 0, 0, 0.3);
+  transition: 1s all;
+  border: 10px solid transparent;
+  border-top: 10px solid gray;
+  border-right: 10px solid gray;
+}
+#hero .video {
+  display: none;
+  position: absolute;
+  z-index: 8;
+}
+#hero .hero--text {
+  width: 50%;
+  padding: 12% 0 0 5%;
+}
+#hero .hero--text__icon {
+  background: #FFFFFF;
+  color: #D500B3;
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 20px;
+}
+#hero .hero--text h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 84px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#hero .hero--text p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  padding: 5% 0 30% 0;
+}
+
+#lorem {
+  background: #262627;
+}
+#lorem .lorem {
+  padding: 12% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#lorem .lorem--logo {
+  width: 36%;
+}
+#lorem .lorem--logo input {
+  display: none;
+}
+#lorem .lorem--logo__about {
+  display: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  position: absolute;
+  width: 36%;
+}
+#lorem .lorem #about:checked ~ .lorem--logo__about {
+  display: block;
+}
+#lorem .lorem--number {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#lorem .lorem--number__text {
+  opacity: 0.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#lorem .lorem--number__text h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#lorem .lorem--number__text p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  width: 100%;
+}
+#lorem .lorem--number__text:hover {
+  transition: 2s all;
+  opacity: 1;
+  cursor: grab;
+}
+
+#swiper {
+  background: url("https://media.istockphoto.com/id/1318101781/photo/stone-black-texture-background-dark-cement-wall.jpg?b=1&s=170667a&w=0&k=20&c=KZzF_N_cRN5OXL873BJWfKfsBY0qN6cpxXEb_RUpNNs=");
+  background-size: 100%;
+}
+#swiper .swiper .swiper-wrapper {
+  padding: 2% 0;
+}
+#swiper .swiper .swiper-wrapper__img {
+  width: 90%;
+  cursor: grab;
+}
+#swiper .swiper .swiper-wrapper__img:hover {
+  background: white;
+  padding: 3% 3% 15% 3%;
+  position: absolute;
+  transition: 0.5s all;
+}
+
+#accordion .accordion {
+  padding: 100px 0;
+}
+#accordion .accordion--logo {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  padding-bottom: 3%;
+}
+#accordion .accordion--group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: start;
+}
+#accordion .accordion--group__connect {
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  border-radius: 1px;
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  margin: 0 2%;
+}
+#accordion .accordion--group__connect input {
+  display: none;
+}
+#accordion .accordion--group__connect--icon {
+  color: white;
+  font-size: 40px;
+  cursor: grab;
+}
+#accordion .accordion--group__connect h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  padding-bottom: 10%;
+}
+#accordion .accordion--group__connect--p {
+  display: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+}
+#accordion .accordion--group__connect #connect:checked ~ .accordion--group__connect--p {
+  display: block;
+}
+#accordion .accordion--group__connect #explore:checked ~ .accordion--group__connect--p {
+  display: block;
+}
+#accordion .accordion--group__connect #create:checked ~ .accordion--group__connect--p {
+  display: block;
+}
+
+#trending .trending {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#trending .trending--column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#trending .trending--column__logo {
+  padding-bottom: 10%;
+  text-align: left;
+}
+#trending .trending--column__logo h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#trending .trending--column__logo p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+}
+#trending .trending--column__market {
+  text-align: left;
+}
+#trending .trending--column__market--icon {
+  transform: rotate(315deg);
+  color: #D400B3;
+  cursor: pointer;
+}
+#trending .trending--column__market h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #D400B3;
+  cursor: pointer;
+}
+#trending .trending--column__group {
+  padding-bottom: 15%;
+  width: 100%;
+}
+#trending .trending--column__group--img {
+  width: 90%;
+  cursor: grab;
+}
+#trending .trending--column__group--text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#trending .trending--column__group--text h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #D400B3;
+  cursor: pointer;
+}
+#trending .trending--column__group--text__ph1 {
+  text-align: left;
+  width: 100%;
+}
+#trending .trending--column__group--text__ph1 h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#trending .trending--column__group--text__ph1 p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+}
+
+#tabs {
+  background: #262627;
+}
+#tabs .tabs--logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#tabs .tabs--logo__text--icon {
+  transform: rotate(315deg);
+  color: #D400B3;
+  cursor: pointer;
+}
+#tabs .tabs--logo__text h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #D400B3;
+  cursor: pointer;
+}
+#tabs .tabs--logo__text p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+}
+#tabs .tabs--logo__h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  background: #0D0D0E;
+  padding: 3% 10%;
+}
+#tabs .tabs--follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10% 0;
+}
+#tabs .tabs--follow__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+#tabs .tabs--follow__group--image {
+  position: absolute;
+  width: 6%;
+  cursor: grab;
+}
+#tabs .tabs--follow__group--img {
+  width: 90%;
+  cursor: grab;
+}
+#tabs .tabs--follow__group h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  padding: 15% 0;
+}
+#tabs .tabs--follow__group button {
+  padding: 1% 2%;
+  background: #D400B3;
+  border: 2px solid #D400B3;
+  border-radius: 1px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100%;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#tabs .tabs--follow__group button:hover {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 109) 65%, rgb(255, 0, 121) 92%);
+  box-shadow: 5px 5px 0 0 gray;
+  transition: 0.5s all;
+}
+
+#backed .backed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  justify-content: center;
+}
+#backed .backed--logo {
+  padding-top: 15%;
+}
+#backed .backed--logo h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#backed .backed--logo p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  padding: 6% 0;
+  width: 70%;
+}
+#backed .backed--contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background: #262627;
+  padding: 10%;
+  border-bottom: 5px solid #D400B3;
+  margin: 27% 0 10% 0;
+}
+#backed .backed--contact h1 {
+  font-family: "Paytone One", sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+#backed .backed--contact p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  padding: 2% 0;
+}
+#backed .backed--contact__input {
+  display: flex;
+}
+#backed .backed--contact__input input {
+  background: #262627;
+  outline: none;
+  color: white;
+  padding: 10px 200px 10px 10px;
+}
+#backed .backed--contact__input button {
+  padding: 1% 2%;
+  background: #D400B3;
+  border: 2px solid #D400B3;
+  border-radius: 1px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100%;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+#backed .backed--contact__input button:hover {
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 9, 109) 65%, rgb(255, 0, 121) 92%);
+  box-shadow: 5px 5px 0 0 gray;
+  transition: 0.5s all;
+}
+#backed .backed--images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 68%;
+}
+#backed .backed--images__image {
+  width: 48%;
+}
+#backed .backed--images__image img {
+  padding: 15% 30%;
+  width: 50%;
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  border-radius: 1px;
+  margin: 17px 0;
+}
+#backed .backed--images__image2 {
+  width: 29%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#backed .backed--images__image2--img {
+  padding: 15% 30%;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  border-radius: 1px;
+}
+#backed .backed--image {
+  position: absolute;
+  z-index: 8;
+  width: 45%;
+}
+
+#footer .footer--menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+#footer .footer--menu__img {
+  width: 15%;
+}
+#footer .footer--menu__icon-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+}
+#footer .footer--menu__menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+}
+#footer .footer--menu__menu-icon--icon {
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  border-radius: 1px;
+  color: white;
+  padding: 5%;
+}
+#footer .footer--menu__menu-icon--icon:hover {
+  cursor: pointer;
+  font-size: 120%;
+}
+#footer .footer--p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  padding: 3% 0;
+  border-top: 3px solid #262627;
+}
+
+/*# sourceMappingURL=style.css.map */

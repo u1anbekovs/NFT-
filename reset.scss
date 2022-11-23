@@ -1,0 +1,139 @@
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: #0D0D0E;
+}
+a{
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+a:hover{
+  border-bottom: 2px solid #FFFFFF;
+  transition: 0.5s all;
+  letter-spacing: 5px;
+}
+$color:#262627;
+@mixin background{
+  background: rgba(196, 196, 196, 0.2);
+  border: 1px solid rgba(229, 229, 229, 0.3);
+  border-radius: 1px;
+}
+@mixin h{
+  font-family: 'Paytone One',sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 84px;
+  line-height: 120%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+@mixin h1{
+  font-family: 'Paytone One',sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 52px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+@mixin h2{
+  font-family: 'Paytone One',sans-serif;
+  font-style: normal;
+  font-weight: 1000;
+  font-size: 31px;
+  line-height: 100%;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+@mixin p{
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+}
+@mixin between{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+@mixin h3{
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #D400B3;
+  cursor: pointer;
+}
+@mixin btn{
+  padding: 1% 2%;
+  background: #D400B3;
+  border: 2px solid #D400B3;
+  border-radius: 1px;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 100%;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+@mixin  button-hover{
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,109,1) 65%, rgba(255,0,121,1) 92%);
+  box-shadow: 5px 5px 0 0 gray;
+  transition: 0.5s all;
+}
+@mixin arrow{
+  transform: rotate(315deg);
+  color: #D400B3;
+  cursor: pointer;
+}
+@mixin img{
+  width: 90%;
+  cursor: grab;
+}
+label{
+  font-family: 'Source Sans Pro',sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100%;
+  line-height: 150%;
+  letter-spacing: 1px;
+  color: #E5E5E5;
+  cursor: pointer;
+}
+label:hover{
+  box-shadow: 0 0 2px 2px;
+  transition: 0.5s all;
+}
+label:active{
+  color: darkblue;
+  transition: 0.5s all;
+}
+@mixin display-none{
+  display: none;
+  @include p;
+}

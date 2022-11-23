@@ -1,0 +1,386 @@
+@import "reset";
+#header{
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  width: 100%;
+  z-index: 8;
+  .header{
+    @include between;
+    &--menu{
+      @include between;
+      width: 35%;
+      &__img{
+        width: 15%;
+      }
+    }
+    &--btn{
+      @include btn;
+    }
+    &--btn:hover{
+      @include button-hover;
+    }
+  }
+}
+#hero{
+  background: url("../img/413b25df-09d7-4d57-8f38-d686c7fc12da (1).png") no-repeat;
+  background-size: 100%;
+  #youtube:checked~.video{
+    display: block;
+    transition: 10s all;
+  }
+  input{
+    display: none;
+  }
+  .youtube{
+    @include h2;
+    background: $color;
+    padding: 3% 14%;
+    border: 10px solid transparent;
+    border-bottom: 10px solid gray;
+    border-left: 10px solid gray;
+    cursor: pointer;
+  }
+  .youtube:hover{
+    background: rgba(0,0,0,0.3);
+    transition: 1s all;
+    border: 10px solid transparent;
+    border-top: 10px solid gray;
+    border-right: 10px solid gray;
+  }
+  .video{
+    display: none;
+    position: absolute;
+    z-index: 8;
+  }
+  .hero{
+    &--text{
+      width: 50%;
+      padding: 12% 0 0 5%;
+      &__icon{
+        background: #FFFFFF;
+        color: #D500B3;
+        font-size: 20px;
+        padding: 15px;
+        margin: 0 20px;
+      }
+      h1{
+        @include h;
+      }
+      p{
+        @include p;
+        padding: 5% 0 30% 0;
+      }
+    }
+  }
+}
+#lorem{
+  background: $color;
+  .lorem{
+    padding: 12% 5%;
+    @include between;
+    &--logo{
+      width: 36%;
+      input{
+        display: none;
+      }
+      &__about{
+       @include display-none;
+        position: absolute;
+        width: 36%;
+      }
+    }
+    #about:checked~.lorem--logo__about{
+      display: block;
+    }
+    &--number{
+      width: 50%;
+      @include between;
+      &__text{
+        opacity: 0.1;
+        @include column;
+        h1{
+          @include h1;
+        }
+        p{
+          @include p;
+          width: 100%;
+        }
+      }
+      &__text:hover{
+        transition: 2s all;
+        opacity: 1;
+        cursor: grab;
+      }
+    }
+  }
+}
+#swiper{
+  background: url("https://media.istockphoto.com/id/1318101781/photo/stone-black-texture-background-dark-cement-wall.jpg?b=1&s=170667a&w=0&k=20&c=KZzF_N_cRN5OXL873BJWfKfsBY0qN6cpxXEb_RUpNNs=");
+  background-size: 100%;
+  .swiper {
+    .swiper-wrapper{
+      padding: 2% 0;
+      &__img{
+       @include img;
+      }
+      &__img:hover{
+        background: white;
+        padding: 3% 3% 15% 3%;
+        position: absolute;
+        transition: 0.5s all;
+      }
+    }
+  }
+}
+#accordion{
+  .accordion{
+    padding: 100px 0;
+    &--logo{
+      @include h1;
+      padding-bottom: 3%;
+    }
+    &--group{
+      @include between;
+      align-items: start;
+      &__connect{
+        @include background;
+        width: 100%;
+        height: 100%;
+        padding: 2%;
+        margin: 0 2%;
+        input{
+          display: none;
+        }
+        &--icon{
+          color: white;
+          font-size: 40px;
+          cursor: grab;
+        }
+        h1{
+          @include h2;
+          padding-bottom: 10%;
+        }
+        &--p{
+         @include display-none;
+        }
+        #connect:checked~.accordion--group__connect--p{
+          display: block;
+        }
+        #explore:checked~.accordion--group__connect--p{
+          display: block;
+        }
+        #create:checked~.accordion--group__connect--p{
+          display: block;
+        }
+      }
+    }
+  }
+}
+#trending{
+  .trending{
+    @include between;
+    &--column{
+      width: 50%;
+      @include column;
+      &__logo{
+        padding-bottom: 10%;
+        text-align: left;
+        h1{
+          @include h1;
+        }
+        p{
+          @include p;
+        }
+      }
+      &__market{
+        text-align: left;
+        &--icon{
+         @include arrow;
+        }
+        h3{
+          @include h3;
+        }
+      }
+      &__group{
+        padding-bottom: 15%;
+        width: 100%;
+        &--img{
+         @include img;
+        }
+        &--text{
+          @include between;
+          h3{
+            @include h3
+          }
+          &__ph1{
+            text-align: left;
+            width: 100%;
+            h1{
+              @include h2;
+            }
+            p{
+              @include p;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#tabs{
+  background: $color;
+  .tabs{
+    &--logo{
+      @include between;
+      &__text{
+        &--icon{
+         @include arrow;
+        }
+        h3{
+          @include h3;
+        }
+        p{
+          @include p;
+        }
+      }
+      &__h1{
+        @include h1;
+        background: #0D0D0E;
+        padding: 3% 10%;
+      }
+    }
+    &--follow{
+      @include between;
+      padding: 10% 0;
+      &__group{
+        @include column;
+        &--image{
+          position: absolute;
+          width: 6%;
+          cursor: grab;
+        }
+        &--img{
+          @include img;
+        }
+        h1{
+          @include h2;
+          padding: 15% 0;
+        }
+        button{
+          @include btn;
+        }
+        button:hover{
+          @include button-hover;
+        }
+      }
+    }
+  }
+}
+#backed{
+  .backed{
+    @include column;
+    justify-content: center;
+    &--logo{
+      padding-top: 15%;
+      h1{
+        @include h1;
+      }
+      p{
+        @include p;
+        padding: 6% 0;
+        width: 70%;
+      }
+    }
+    &--contact{
+      @include column;
+      background: $color;
+      padding: 10%;
+      border-bottom: 5px solid #D400B3;
+      margin: 27% 0 10% 0;
+      h1{
+        @include h1;
+      }
+      p{
+        @include p;
+        padding: 2% 0;
+      }
+     &__input{
+       display: flex;
+       input{
+         background: $color;
+         outline: none;
+         color: white;
+         padding: 10px 200px 10px 10px;
+       }
+       button{
+         @include btn;
+       }
+       button:hover{
+         @include button-hover;
+       }
+     }
+    }
+    &--images{
+      @include between;
+      width: 68%;
+      &__image{
+        width: 48%;
+        img{
+          padding: 15% 30%;
+          width: 50%;
+          @include background;
+          margin: 17px 0;
+        }
+      }
+      &__image2{
+        width: 29%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--img{
+          padding: 15% 30%;
+          width: 100%;
+          @include background;
+        }
+      }
+    }
+    &--image{
+      position: absolute;
+      z-index: 8;
+      width: 45%;
+    }
+  }
+}
+#footer{
+  .footer{
+    &--menu{
+      @include between;
+      padding: 3% 0;
+      &__img{
+        width: 15%;
+      }
+      &__icon-menu{
+        @include between;
+        width: 35%;
+      }
+      &__menu-icon{
+        @include between;
+        width: 15%;
+        &--icon{
+          @include background;
+          color: white;
+          padding: 5%;
+        }
+        &--icon:hover{
+          cursor: pointer;
+          font-size: 120%;
+        }
+      }
+    }
+    &--p{
+      @include p;
+      padding: 3% 0;
+      border-top: 3px solid $color;
+    }
+  }
+}

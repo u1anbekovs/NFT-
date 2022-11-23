@@ -1,0 +1,323 @@
+@media (max-width: 1140px) {
+  #hero .hero--text h1 {
+    font-size: 70px;
+  }
+  #hero .hero--text p {
+    font-size: 80%;
+  }
+  #hero .youtube {
+    font-size: 25px;
+  }
+  #hero .hero--text__icon {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 15px;
+  }
+  label {
+    font-size: 80%;
+  }
+  #lorem .lorem--number__text h1 {
+    font-size: 40px;
+  }
+  #lorem .lorem--number__text p {
+    font-size: 80%;
+  }
+  #accordion .accordion--logo {
+    font-size: 40px;
+  }
+  #accordion .accordion--group__connect h1 {
+    font-size: 25px;
+  }
+  #accordion .accordion--group__connect--icon {
+    font-size: 30px;
+  }
+  #trending .trending--column__logo h1 {
+    font-size: 40px;
+  }
+  #trending .trending--column__logo p {
+    font-size: 80%;
+  }
+  #trending .trending--column__group--text__ph1 h1 {
+    font-size: 20px;
+  }
+  #trending .trending--column__group--text__ph1 p {
+    font-size: 80%;
+  }
+  #trending .trending--column__group--text h3 {
+    font-size: 80%;
+  }
+  #trending .trending--column__market h3 {
+    font-size: 80%;
+  }
+  #tabs .tabs--logo__h1 {
+    font-size: 40px;
+  }
+  #tabs .tabs--logo__text h3 {
+    font-size: 80%;
+  }
+  #tabs .tabs--logo__text p {
+    font-size: 80%;
+  }
+  #tabs .tabs--follow__group h1 {
+    font-size: 20px;
+    padding: 10% 0;
+  }
+  #backed .backed--logo h1 {
+    font-size: 40px;
+  }
+  #backed .backed--logo p {
+    font-size: 80%;
+  }
+  #backed .backed--contact h1 {
+    font-size: 40px;
+  }
+  #backed .backed--contact p {
+    font-size: 80%;
+  }
+  #footer .footer--p {
+    font-size: 80%;
+  }
+}
+@media (max-width: 1024px) {
+  #hero .hero--text h1 {
+    font-size: 60px;
+  }
+  #hero .hero--text p {
+    font-size: 70%;
+  }
+  #hero .youtube {
+    font-size: 20px;
+  }
+  #hero .hero--text__icon {
+    font-size: 10px;
+  }
+  label {
+    font-size: 70%;
+  }
+  #lorem .lorem--number__text h1 {
+    font-size: 30px;
+  }
+  #lorem .lorem--number__text p {
+    font-size: 70%;
+  }
+  #accordion .accordion--logo {
+    font-size: 30px;
+  }
+  #accordion .accordion--group__connect h1 {
+    font-size: 20px;
+  }
+  #trending .trending--column__logo h1 {
+    font-size: 30px;
+  }
+  #trending .trending--column__logo p {
+    font-size: 70%;
+  }
+  #trending .trending--column__group--text h3 {
+    font-size: 70%;
+  }
+  #trending .trending--column__group--text__ph1 p {
+    font-size: 70%;
+  }
+  #trending .trending--column__market h3 {
+    font-size: 70%;
+  }
+  #tabs .tabs--logo__text h3 {
+    font-size: 70%;
+  }
+  #tabs .tabs--logo__text p {
+    font-size: 70%;
+  }
+  #tabs .tabs--logo__h1 {
+    font-size: 30px;
+  }
+  #backed .backed--logo h1 {
+    font-size: 30px;
+  }
+  #backed .backed--logo p {
+    font-size: 70%;
+  }
+  #backed .backed--contact h1 {
+    font-size: 30px;
+  }
+  #backed .backed--contact p {
+    font-size: 70%;
+  }
+  #footer .footer--p {
+    font-size: 70%;
+  }
+}
+@media (max-width: 768px) {
+  a {
+    font-size: 12px;
+  }
+  #header .header--btn {
+    padding: 0 1%;
+    font-size: 60%;
+  }
+  #hero .hero--text h1 {
+    font-size: 45px;
+  }
+  #hero .hero--text p {
+    font-size: 50%;
+  }
+  #hero .youtube {
+    font-size: 17px;
+  }
+  #hero .hero--text__icon {
+    padding: 5px;
+  }
+  label {
+    font-size: 50%;
+  }
+  #lorem .lorem--number__text h1 {
+    font-size: 20px;
+  }
+  #lorem .lorem--number__text p {
+    font-size: 50%;
+  }
+  #accordion .accordion--logo {
+    font-size: 20px;
+  }
+  #accordion .accordion--group__connect h1 {
+    font-size: 17px;
+  }
+  #accordion .accordion--group__connect--icon {
+    font-size: 20px;
+  }
+  #trending .trending--column__logo h1 {
+    font-size: 20px;
+  }
+  #trending .trending--column__logo p {
+    font-size: 50%;
+  }
+  #trending .trending--column__group--text__ph1 h1 {
+    font-size: 17px;
+  }
+  #trending .trending--column__group--text__ph1 p {
+    font-size: 50%;
+  }
+  #trending .trending--column__group--text h3 {
+    font-size: 50%;
+  }
+  #trending .trending--column__market h3 {
+    font-size: 50%;
+  }
+  #tabs .tabs--logo__h1 {
+    font-size: 20px;
+  }
+  #tabs .tabs--logo__text h3 {
+    font-size: 50%;
+  }
+  #tabs .tabs--logo__text p {
+    font-size: 50%;
+  }
+  #tabs .tabs--follow__group h1 {
+    font-size: 17px;
+  }
+  #backed .backed--logo h1 {
+    font-size: 20px;
+  }
+  #backed .backed--logo p {
+    font-size: 50%;
+  }
+  #backed .backed--contact h1 {
+    font-size: 20px;
+  }
+  #backed .backed--contact p {
+    font-size: 50%;
+  }
+  #footer .footer--p {
+    font-size: 50%;
+  }
+}
+@media (max-width: 576px) {
+  #header .header--menu {
+    width: 45%;
+  }
+  #hero .hero--text h1 {
+    font-size: 35px;
+  }
+  #footer .footer--menu__icon-menu {
+    width: 45%;
+  }
+  #backed .backed--contact__input input {
+    padding: 0 30px;
+  }
+  #backed .backed--contact__input button {
+    font-size: 70%;
+  }
+  #tabs .tabs--follow__group button {
+    font-size: 70%;
+  }
+}
+@media (max-width: 451px) {
+  #header .header--menu {
+    width: 50%;
+  }
+  #hero {
+    background: url("../img/IMAGE (28).png");
+  }
+  #hero .hero--text {
+    width: 90%;
+  }
+  #accordion .accordion--group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  #accordion .accordion--group__connect h1 {
+    padding-bottom: 0;
+  }
+  #trending .trending {
+    flex-direction: column;
+  }
+  #trending .trending--column__group--img {
+    width: 100%;
+  }
+  #tabs .tabs--logo {
+    flex-direction: column;
+  }
+  #tabs .tabs--follow {
+    flex-direction: column;
+  }
+  #tabs .tabs--follow__group--image {
+    width: 20%;
+  }
+  #tabs .tabs--follow__group h1 {
+    padding: 15% 0;
+  }
+  #backed .backed--images {
+    flex-direction: column;
+  }
+  #backed .backed--contact__input {
+    flex-direction: column;
+  }
+  #footer .footer--menu__icon-menu {
+    width: 50%;
+  }
+  #footer .footer--p {
+    font-size: 1%;
+  }
+}
+@media (max-width: 415px) {
+  #header .header {
+    flex-direction: column;
+  }
+  #header .header--menu {
+    width: 70%;
+  }
+  #hero .hero--text h1 {
+    padding: 5% 0;
+  }
+  #hero .hero--text p {
+    padding: 5% 0 10% 0;
+  }
+  #footer .footer--menu {
+    flex-direction: column;
+  }
+  #footer .footer--menu__icon-menu {
+    width: 70%;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
