@@ -254,10 +254,16 @@
   #tabs .tabs--follow__group button {
     font-size: 70%;
   }
+  #footer .footer--menu__menu-icon {
+    width: 50%;
+  }
 }
 @media (max-width: 451px) {
   #header .header--menu {
     width: 50%;
+  }
+  #hero .hero--text h1 {
+    padding: 15% 0;
   }
   #hero {
     background: url("/img/IMAGE (28).png");
@@ -269,6 +275,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+  }
+  #accordion .accordion--group__connect {
+    margin: 2% 8%;
   }
   #accordion .accordion--group__connect h1 {
     padding-bottom: 0;
@@ -284,6 +293,9 @@
   }
   #tabs .tabs--follow {
     flex-direction: column;
+  }
+  #tabs .tabs--follow__group {
+    padding-bottom: 3%;
   }
   #tabs .tabs--follow__group--image {
     width: 20%;
@@ -309,7 +321,7 @@
     flex-direction: column;
   }
   #header .header--menu {
-    width: 70%;
+    width: 100%;
   }
   #hero .hero--text h1 {
     padding: 5% 0;
@@ -321,7 +333,7 @@
     flex-direction: column;
   }
   #footer .footer--menu__icon-menu {
-    width: 70%;
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
