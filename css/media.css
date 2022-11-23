@@ -237,6 +237,9 @@
   #hero .hero--text h1 {
     font-size: 35px;
   }
+  #lorem .lorem--logo {
+    display: none;
+  }
   #footer .footer--menu__icon-menu {
     width: 45%;
   }

@@ -124,6 +124,8 @@ label:active {
 }
 #hero .video {
   display: none;
+  width: 50%;
+  height: 50%;
   position: absolute;
   z-index: 8;
 }
