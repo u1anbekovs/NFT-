@@ -237,7 +237,7 @@
     width: 45%;
   }
   #hero .hero--text h1 {
-    font-size: 35px;
+    font-size: 30px;
   }
   #lorem .lorem--logo {
     display: none;
@@ -261,9 +261,6 @@
 @media (max-width: 451px) {
   #header .header--menu {
     width: 50%;
-  }
-  #hero .hero--text h1 {
-    padding: 15% 0;
   }
   #hero {
     background: url("/img/IMAGE (28).png");
@@ -324,7 +321,7 @@
     width: 100%;
   }
   #hero .hero--text h1 {
-    padding: 5% 0;
+    padding: 15% 0;
   }
   #hero .hero--text p {
     padding: 5% 0 10% 0;
